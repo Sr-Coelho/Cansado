@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Cansado.View.PaginaLoginAdmin">
+    <ContentPage.Content>
+        <StackLayout Margin="30,0" Orientation="Vertical" Spacing="30" VerticalOptions="StartAndExpand">
+            <Entry Placeholder="CPF" Text="{Binding CPF}"/>
+            <Entry IsPassword="True" Placeholder="Senha" Text="{Binding Senha}"/>
+            <Button CornerRadius="20" Text="Admin Login" Command="{Binding LoginAdmin}" BackgroundColor="Black" TextColor="White"/>
+            <Button CornerRadius="20" Margin="0,50,0,0"  Clicked="Button_Clicked" Text="Register new Admin" TextColor="White" BackgroundColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Cansado.View.PaginaPrincipal">
+    <ContentPage.Content>
+        <StackLayout Margin="30,10" Orientation="Vertical" Spacing="30" VerticalOptions="StartAndExpand">
+            <Label Text="{Binding NomeCompleto}" FontSize="24"/>
+            <Button BackgroundColor="#795F4F" TextColor="#C8A899" Text="Aulas" CornerRadius="20" Command="{Binding IrParaAulas}"/>
+            <Button BackgroundColor="#795F4F" TextColor="#C8A899" Text="Noticias" CornerRadius="20" Command="{Binding IrParaRecados}"/>
+            <Button BackgroundColor="#795F4F" TextColor="#C8A899" Text="Recados" CornerRadius="20" Command="{Binding IrParaNoticias}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

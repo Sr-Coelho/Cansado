@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Cansado.View.PaginaDeRegistro">
+    <ContentPage.Content>
+        <StackLayout Margin="30,0" Spacing="30" VerticalOptions="CenterAndExpand">
+            <Label Text="Registrar Usuario" FontSize="24" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+            <Entry Placeholder="Nome Completo" Text="{Binding NomeCompleto}"/>
+            <Entry Placeholder="CPF" Text="{Binding CPF}"/>
+            <Entry Placeholder="Idade" Text="{Binding Idade}" Keyboard="Numeric"/>
+            <Entry Placeholder="Senha" Text="{Binding Senha}"/>
+            <Button CornerRadius="20" Text="Registrar" BackgroundColor="#795F4F" TextColor="#C8A899" Command="{Binding RegistrarUsuario}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

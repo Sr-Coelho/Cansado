@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Cansado.View.PaginaDeLogin">
+    <NavigationPage.TitleView>
+        <Button FontSize="18" Text="Acesso Adiministrador" TextColor="#C8A899" HorizontalOptions="EndAndExpand" Clicked="Button_Clicked_4" BackgroundColor="Transparent"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="30,10" Orientation="Vertical" Spacing="30" VerticalOptions="StartAndExpand">
+                <Label Text="PTIA" FontSize="Header"/>
+                <Label Text="Bem Vindo, faça seu login" FontSize="Medium"/>
+                <Entry Visual="Material" FontSize="24" Placeholder="Usuario" Text="{Binding CPF}" x:Name="MeuUsuarioL"/>
+                <Entry Visual="Material" IsPassword="True" Placeholder="Senha" Text="{Binding Senha}" x:Name="MinhaSenhaL"/>
+                <Button BackgroundColor="#795F4F" TextColor="#C8A899" Text="Entrar" CornerRadius="20" Command="{Binding LoginUsuario}"/>
+                <Button Text="Criar Conta" Margin="0,50,0,0" TextColor="#C8A899" BackgroundColor="Transparent" CornerRadius="20" Command="{Binding IrParaRegistro}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

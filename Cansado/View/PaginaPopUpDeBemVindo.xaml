@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Cansado.View.PaginaPopUpDeBemVindo">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#C8A899">
+            <StackLayout IsVisible="True" Orientation="Vertical">
+                <Button x:Name="BotaoPular" Text="Pular" BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="End"/>
+                <Label Text="Bem Vindo ao PTIA" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                <Label Text="Antes de começar, por favor, nos diga algumas informações, tudo bem?" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                <Button x:Name="Proximo" Text="Proximo" CornerRadius="15" BorderColor="#4A9B9E" BackgroundColor="#C6EFE7" TextColor="#340203" Margin="25" VerticalOptions="End"/>
+            </StackLayout>
+            <StackLayout IsVisible="False">
+                <Button  Text="Pular" BackgroundColor="Transparent"/>
+                <Label Text="Otimo!"/>
+                <Label Text=""/>
+                <Entry/>
+                <Entry/>
+                <Button  Text="Proximo" CornerRadius="15"/>
+            </StackLayout>
+            <StackLayout IsVisible="False">
+                <Button  Text="Pular" BackgroundColor="Transparent"/>
+                <Label Text=""/>
+                <Label Text=""/>
+                <Entry/>
+                <Button  Text="Proximo" CornerRadius="15"/>
+            </StackLayout>
+            <StackLayout IsVisible="False">
+                <Button  Text="Pular" BackgroundColor="Transparent"/>
+                <Label Text=""/>
+                <Label Text=""/>
+                <Entry/>
+                <Button  Text="Proximo" CornerRadius="15"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
